@@ -1,16 +1,37 @@
-.PHONY: all clean paper
+LATEX= pdflatex -shell-escape
+BIBTEX= bibtex
+XDVI = xdvi
+DVIPDF= dvipdfm -p letter
+PS2PDF= ps2pdf
+DVIPS= dvips -t letter -P pdf
+RM = /bin/rm -f
+CAT = cat
+ISPELL = ispell
+SORT = sort
 
-all:  paper 
-#\
-#    tikz/storage-traditional.pdf \
-#    tikz/storage-disaggregated.pdf \
-#    tikz/storage-disaggregated-ops.pdf \
-#    tikz/ebpf-data.pdf \
-#    paper
+MAINDOC = main
+MAINPDF = ${MAINDOC}.pdf
 
-tikz/%.pdf: tikz/%.tex
-	xelatex -output-directory=tikz/ $<
-	pdfcrop $@
+PROPOSAL = proposal
+PROPOSALPDF = ${PROPOSAL}.pdf
 
-paper:
-	latex-mk --pdflatex main.tex || true
+all: clean
+	${LATEX} ${MAINDOC}.tex
+	${BIBTEX} ${MAINDOC}.aux
+	${LATEX} ${MAINDOC}.tex
+	${LATEX} ${MAINDOC}.tex
+
+proposal: clean
+	${LATEX} ${PROPOSAL}.tex
+	${BIBTEX} ${PROPOSAL}.aux
+	${LATEX} ${PROPOSAL}.tex
+	${LATEX} ${PROPOSAL}.tex
+
+
+
+clean:
+	rm -f *out *aux *bbl *blg *log *.tex~ *.dvi *.fdb_lat* *.fls 
+	rm -f *converted-to.pdf
+	rm -f ${MAINDOC}.pdf ${PROPOSAL}.pdf
+	rm -Rf auto/
+	rm -Rf _minted-paper/ 
