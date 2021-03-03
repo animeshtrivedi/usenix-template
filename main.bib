@@ -3,19 +3,1416 @@
 %% from source `main' on 2019/03/18.
 %%
 %-------------------------------------------------------------------------------
-@Book{arpachiDusseau18:osbook,
-  author =       {Arpaci-Dusseau, Remzi H. and Arpaci-Dusseau Andrea C.},
-  title =        {Operating Systems: Three Easy Pieces},
-  publisher =    {Arpaci-Dusseau Books, LLC},
-  year =         2015,
-  edition =      {1.00},
-  note =         {\url{http://pages.cs.wisc.edu/~remzi/OSTEP/}}
+
+@misc{2020-arrow,
+  title        = {{Apache Arrow: A cross-language development platform for in-memory data}},
+  author       = {},
+  howpublished = {\url{https://arrow.apache.org/}},
+  note         = {Accessed: 2020-02-15}
 }
-@InProceedings{waldspurger02,
-  author =       {Waldspurger, Carl A.},
-  title =        {Memory resource management in {VMware ESX} server},
-  booktitle =    {USENIX Symposium on Operating System Design and
-                  Implementation (OSDI)},
-  year =         2002,
-  pages =        {181--194},
-  note =         {\url{https://www.usenix.org/legacy/event/osdi02/tech/waldspurger/waldspurger.pdf}}}
+
+@misc{2020-plasma,
+  title        = {{Plasma: A High-Performance Shared-Memory Object Store}},
+  author       = {Philipp Moritz and Robert Nishihara},
+  howpublished = {\url{https://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-cisco-efm,
+  title        = {{Kinetic Edge and Fog Processing Module (EFM)}},
+  author       = {Cisco},
+  howpublished = {\url{https://www.cisco.com/c/dam/en/us/solutions/collateral/internet-of-things/kinetic-datasheet-efm.pdf}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-dell-edge-gateways,
+  title        = {{Edge Gateway 3003} \mbox{Specification}},
+  author       = {Dell},
+  howpublished = {\url{https://topics-cdn.dell.com/pdf/dell-edge-gateway-3000-series_Specifications3_en-us.pdf}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-jc-latency,
+  title        = {{Latency mitigation strategies}},
+  author       = {John Carmack},
+  howpublished = {\url{https://danluu.com/latency-mitigation/} (mirror)},
+  note         = {Accessed: 2020-02-15}
+}
+@misc{2020-aws-storage,
+  title        = {{Overview of Amazon Web Services}},
+  author       = {Amazon},
+  howpublished = {\url{https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-azure-sqledge,
+  title        = {{Azure SQL Database Edge (Preview): Small-footprint, edge-optimized data engine with built-in AI}},
+  author       = {Microsoft},
+  howpublished = {\url{https://azure.microsoft.com/en-us/services/sql-database-edge/}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-aws-db,
+  title        = {{ Databases on AWS}},
+  author       = {Amazon},
+  howpublished = {\url{https://aws.amazon.com/products/databases/?nc2=h_ql_prod_db}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-gcp-storage,
+  title        = {{Cloud storage products}},
+  author       = {Google},
+  howpublished = {\url{https://cloud.google.com/products/storage}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-gcp-db,
+  title        = {{Google Cloud Databases}},
+  author       = {Google},
+  howpublished = {\url{https://cloud.google.com/products/databases}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-azure-stodb,
+  title        = {{Azure products : Datbases and Storage categories}},
+  author       = {Microsoft},
+  howpublished = {\url{https://azure.microsoft.com/en-us/services/}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-etsi-model,
+  title        = {{Multi-access Edge Computing (MEC): Framework and Reference Architecture}},
+  author       = {ETSI},
+  year         = {2019},
+  howpublished = {\url{https://www.etsi.org/deliver/etsi_gs/MEC/001_099/003/02.01.01_60/gs_MEC003v020101p.pdf}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-aws-iot-edge,
+  title        = {{AWS IoT for the Edge}},
+  author       = {Amazon},
+  howpublished = {\url{https://aws.amazon.com/iot/solutions/iot-edge/}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-azure-iot,
+  title        = {{Azure IoT Edge}},
+  author       = {Microsoft},
+  howpublished = {\url{https://azure.microsoft.com/en-us/services/iot-edge/}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-google-iot,
+  title        = {{Google Cloud IoT}},
+  author       = {Google},
+  howpublished = {\url{https://cloud.google.com/solutions/iot}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{2020-apache-cql,
+  title        = {{The Cassandra Query Language (CQL)}},
+  author       = {Apache},
+  howpublished = {\url{http://cassandra.apache.org/doc/latest/cql/}},
+  note         = {Accessed: 2020-02-15}
+}
+
+@misc{opentsdb, 
+  title        = {{The Scalable Time Series Database}},
+  howpublished = {\url{http://opentsdb.net}},
+  note         = {Accessed: 2020-05-05}
+}
+
+@article{2017-mit-cars,
+  author        = {Lex Fridman and
+               Daniel E. Brown and
+               Michael Glazer and
+               William Angell and
+               Spencer Dodd and
+               Benedikt Jenik and
+               Jack Terwilliger and
+               Julia Kindelsberger and
+               Li Ding and
+               Sean Seaman and
+               Hillary Abraham and
+               Alea Mehler and
+               Andrew Sipperley and
+               Anthony Pettinato and
+               Bobbie Seppelt and
+               Linda Angell and
+               Bruce Mehler and
+               Bryan Reimer},
+  title         = {{MIT} Autonomous Vehicle Technology Study: Large-Scale Deep Learning Based Analysis of Driver Behavior and Interaction with Automation},
+  journal       = {CoRR},
+  volume        = {abs/1711.06976},
+  year          = {2017}
+}
+
+@inproceedings{2020-hotcloud-mc-serverless,
+  author    = {Jesse Donkervliet and Animesh Trivedi and Alexandru Iosup},
+  title     = {Towards Supporting Millions of Users in Modifiable Virtual Environments by Redesigning Minecraft-Like Games as Serverless Systems},
+  booktitle = {{USENIX} Workshop on Hot Topics in Cloud Computing (HotCloud)},
+  year      = {2020}
+}
+
+@inproceedings {2018-atc-albis,
+author = {Animesh Trivedi and Patrick Stuedi and Jonas Pfefferle and Adrian Schuepbach and Bernard Metzler},
+title = {Albis: High-Performance File Format for Big Data Systems},
+booktitle = {{USENIX} Annual Technical Conference ({ATC})},
+year = {2018},
+pages = {615--630}
+}
+
+@article{2018-cc-game-offloading,
+  author    = {M. H. Jiang and
+               Otto W. Visser and
+               I. S. W. B. Prasetya and
+               Alexandru Iosup},
+  title     = {A mirroring architecture for sophisticated mobile games using computation-offloading},
+  journal   = {Concurrency and Computation Practice and Experience},
+  volume    = {30},
+  number    = {17},
+  year      = {2018}
+}
+
+@inproceedings{2018-sec-vr-edge,
+  author    = {Y. {Li} and W. {Gao}},
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {MUVR: Supporting Multi-User Mobile Virtual Reality with Resource Constrained Edge Cloud},
+  year      = {2018},
+  pages     = {1-16}
+} 
+
+@inproceedings{2018-sec-urban,  
+  author    = {Julien Gedeon and Michael Stein and Jeff Krisztinkovics and Patrick Felka and Katharina Keller and Christian Meurisch and Lin Wang and Max Mühlhäuser}, 
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {From Cell Towers to Smart Street Lamps: Placing Cloudlets on Existing Urban Infrastructures},
+  year      = {2018},
+  pages     = {187-202}
+}
+
+@inproceedings{2018-sec-iot-camera,
+  author    = {Si Young Jang and Yoonhyung Lee and Byoungheon Shin and Dongman Lee},   
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {Application-Aware IoT Camera Virtualization for Video Analytics Edge Computing},
+  year      = {2018},
+  pages     = {132-144}
+} 
+
+@inproceedings{2018-sec-drone-vid,
+  author    = {Junjue Wang and Ziqiang Feng and Zhuo Chen and Shilpa Anna George and Mihir Bala and Padmanabhan Pillai and Shao-Wen Yang and Mahadev Satyanarayanan},
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {Bandwidth-Efficient Live Video Analytics for Drones Via Edge Computing},
+  year      = {2018},
+  pages     = {159-173}
+} 
+
+@inproceedings{2018-sec-videoedge,  
+  author    = {Chien-Chun Hung and Ganesh Ananthanarayanan and Peter Bodík and Leana Golubchik and Minlan Yu and Victor Bahl and Matthai Philipose}, 
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {VideoEdge: Processing Camera Streams using Hierarchical Clusters},
+  year      = {2018},
+  pages     = {115-131}
+} 
+
+@article{2018-ieee-edge-compute-offload-modeling,  
+  author   = {José Leal D. Neto and Se-Young Yu and Daniel F. Macedo and José Marcos S. Nogueira and Rami Langar and Stefano Secci},  
+  journal  = {IEEE Transactions on Mobile Computing},
+  title    = {ULOOF: A User Level Online Offloading Framework for Mobile Edge Computing},
+  year     = {2018},
+  volume   = {17},
+  number   = {11},
+  pages    = {2660-2674}
+}
+
+@inproceedings{2018-hotedge-eco,
+  author    = {Nisha Talagala and Swaminathan Sundararaman and Vinay Sridhar and Dulcardo Arteaga and Qianmei Luo and Sriram Subramanian and Sindhu Ghanta and Lior Khermosh and Drew Roselli},
+  title     = {{ECO}: Harmonizing Edge and Cloud with ML/DL Orchestration},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@inproceedings{2017-chi-ss,
+  author    = {Laput, Gierad and Zhang, Yang and Harrison, Chris},
+  title     = {Synthetic Sensors: Towards General-Purpose Sensing},
+  year      = {2017},
+  booktitle = {CHI Conference on Human Factors in Computing Systems (CHI)},
+  pages     = {3986–3999},
+  numpages  = {14}
+}
+
+@inproceedings{Diao2014CloudCraftCD,
+author = {Diao, Ziqiang and Wang, S. and Schallehn, E. and Saake, Gunter},
+year = {2014},
+month = {January},
+pages = {71-84},
+title = {CloudCraft: Cloud-based data management for MMORPGs},
+volume = {270},
+booktitle = {Databases and Information Systems VIII}
+}
+
+@inproceedings{2014-osdi-param,
+  author    = {Mu Li and David G. Andersen and Jun Woo Park and Alexander J. Smola and Amr Ahmed and Vanja Josifovski and James Long and Eugene J. Shekita and Bor-Yiing Su},
+  title     = {Scaling Distributed Machine Learning with the Parameter Server},
+  booktitle = {{USENIX} Symposium on Operating Systems Design and Implementation ({OSDI})},
+  year      = {2014},
+  pages     = {583--598}
+}
+
+@inproceedings{2017-edge-cloudpath,
+  author    = {Mortazavi, Seyed Hossein and Salehe, Mohammad and Gomes, Carolina Simoes and Phillips, Caleb and de Lara, Eyal},
+  title     = {Cloudpath: A Multi-Tier Cloud Computing Framework},
+  year      = {2017},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)}
+}
+
+@inproceedings{2017-sec-precog,
+  author    = {Drolia, Utsav and Guo, Katherine and Narasimhan, Priya},
+  title     = {Precog: refetching for Image recognition Applications at the Edge},
+  year      = {2017},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)}
+}
+  
+@inproceedings{2017-icdcs-cachier,
+  author    = {Utsav Drolia and Katherine Guo and Jiaqi Tan and Rajeev Gandhi and Priya Narasimhan},
+  booktitle = {IEEE International Conference on Distributed Computing Systems (ICDCS)},
+  title     = {Cachier: Edge-Caching for Recognition Applications},
+  year      = {2017},
+  pages     = {276-286}
+}
+
+@inproceedings{2017-mmog-ec+,
+  author    = {Zhang, Wuyang and Chen, Jiachen and Zhang, Yanyong and Raychaudhuri, Dipankar},
+  title     = {Towards Efficient Edge Cloud Augmentation for Virtual Reality MMOGs},
+  year      = {2017},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)}
+}
+
+@article{2009-ieee-cloudlet,
+  author   = {Mahadev Satyanarayanan and Paramvir Bahl and Ramón Cáceres and Nigel Davies},
+  journal  = {IEEE Pervasive Computing},
+  title    = {The Case for VM-Based Cloudlets in Mobile Computing},
+  year     = {2009},
+  volume   = {8},
+  number   = {4},
+  pages    = {14-23}
+}
+
+@article{2017-ieee-satya-edge-computing,
+  author     = {Satyanarayanan, Mahadev},
+  title      = {The Emergence of Edge Computing},
+  year       = {2017},
+  issue_date = {January 2017},
+  volume     = {50},
+  number     = {1},
+  pages      = {30–39}
+}
+
+@inproceedings{2016-acm-load-online,
+  author    = {Burger, Valentin and Pajo, Jane Frances and Sanchez, Odnan Ref and Seufert, Michael and Schwartz, Christian and Wamser, Florian and Davoli, Franco and Tran-Gia, Phuoc},
+  title     = {Load Dynamics of a Multiplayer Online Battle Arena and Simulative Assessment of Edge Server Placements},
+  year      = {2016},
+  booktitle = {ACM International Conference on Multimedia Systems (MMSys)}
+}
+
+@inproceedings{2016-icdcn-edge-storage-security,
+  author    = {Esiner, Ertem and Datta, Anwitaman},
+  title     = {Layered Security for Storage at the Edge: On Decentralized Multi-factor Access Control},
+  booktitle = {ACM International Conference on Distributed Computing and Networking (ICDCN)},
+  year      = {2016},
+  pages     = {9:1--9:10}
+} 
+
+@inproceedings{2017-nsdi-farmbeats,
+  author    = {Deepak Vasisht and Zerina Kapetanovic and Jongho Won and Xinxin Jin and Ranveer Chandra and Sudipta Sinha and Ashish Kapoor and Madhusudhan Sudarshan and Sean Stratman},
+  title     = {FarmBeats: An IoT Platform for Data-Driven Agriculture},
+  booktitle = {{USENIX} Symposium on Networked Systems Design and Implementation (NSDI)},
+  year      = {2017},
+  pages     = {515--529}
+}
+
+@inbook{2017-Springer-object-store,
+  author    = {Confais, Bastien
+and Lebre, Adrien
+and Parrein, Beno{\^i}t},
+  title     = {Performance Analysis of Object Store Systems in a Fog and Edge Computing Infrastructure},
+  booktitle = {Transactions on Large-Scale Data- and Knowledge-Centered Systems XXXIII},
+  year      = {2017},
+  pages     = {40--79}
+}
+
+@inproceedings{2018-asplos-autodrive,
+  author    = {Lin, Shih-Chieh and Zhang, Yunqi and Hsu, Chang-Hong and Skach, Matt and Haque, Md E. and Tang, Lingjia and Mars, Jason},
+  title     = {The Architectural Implications of Autonomous Driving: Constraints and Acceleration},
+  year      = {2018},
+  booktitle = {International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  pages     = {751–766}
+}
+
+
+@inproceedings{2018-hotedge-eSGD,
+  author    = {Zeyi Tao and Qun Li},
+  title     = {eSGD: Communication Efficient Distributed Deep Learning on the Edge},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@inproceedings{2018-hotedge-modi,
+  author    = {Samuel S. Ogden and Tian Guo},
+  title     = {{MODI}: Mobile Deep Inference Made Efficient by Edge Computing},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@article{2018-csur-edge,
+  author     = {Li, Chao and Xue, Yushu and Wang, Jing and Zhang, Weigong and Li, Tao},
+  title      = {Edge-Oriented Computing Paradigms: A Survey on Architecture Design and System Management},
+  year       = {2018},
+  volume     = {51},
+  number     = {2},
+  journal    = {ACM Computing Surveys}
+}
+
+@inproceedings{2018-hotedge-red-wedding,
+  author    = {Christopher Meiklejohn and Heather Miller and Zeeshan Lakhani},
+  title     = {Towards a Solution to the Red Wedding Problem},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@article{2018-xxx-stream,
+  author     = {Dias de Assuno, Marcos and da Silva Veith, Alexandre and Buyya, Rajkumar},
+  title      = {Distributed Data Stream Processing and Edge Computing},
+  year       = {2018},
+  volume     = {103},
+  number     = {C},
+  journal    = {Journal of Network and Computer Applications},
+  pages      = {1–17}
+}
+
+
+@article{2018-xxx-fog-iot,
+  author  = {Anwar, Muhammad and Wang, Shangguang and Zia, Muhammad and Jadoon, Ahmer and Akram, Umair and Raza Naqvi, Syed Salman},
+  year    = {2018},
+  month   = {05},
+  pages   = {1-22},
+  title   = {Fog Computing: An Overview of Big IoT Data Analytics},
+  volume  = {2018},
+  journal = {Wireless Communications and Mobile Computing},
+}
+
+@inproceedings{2018-atc-understanding-serverless,
+  author    = {Klimovic, Ana and Wang, Yawen and Kozyrakis, Christos and Stuedi, Patrick and Pfefferle, Jonas and Trivedi, Animesh},
+  title     = {Understanding Ephemeral Storage for Serverless Analytics},
+  year      = {2018},
+  booktitle = {USENIX Conference on Usenix Annual Technical Conference (ATC)},
+  pages     = {789–794}
+}
+
+@inproceedings{2018-osdi-pocket,
+  author    = {Klimovic, Ana and Wang, Yawen and Stuedi, Patrick and Trivedi, Animesh and Pfefferle, Jonas and Kozyrakis, Christos},
+  title     = {Pocket: Elastic Ephemeral Storage for Serverless Analytics},
+  year      = {2018},
+  booktitle = {USENIX Conference on Operating Systems Design and Implementation (OSDI)},
+  pages     = {427–444}
+}
+
+@inproceedings{2018-hotedge-ml-datastore,
+  author    = {Arun Ravindran and Anjus George},
+  title     = {An Edge Datastore Architecture For Latency-Critical Distributed Machine Vision Applications},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@techreport{2018-inria-techr-stream,
+  title       = {{Storage and Ingestion Systems in Support of Stream Processing: A Survey}},
+  author      = {Marcu, Ovidiu-Cristian and Costan, Alexandru and Antoniu, Gabriel and P{\'e}rez-Hern{\'a}ndez, Mar{\'i}a S and Tudoran, Radu and Bortoli, Stefano and Nicolae, Bogdan},
+  url         = {https://hal.inria.fr/hal-01939280},
+  type        = {Technical Report},
+  number      = {RT-0501},
+  pages       = {1-33},
+  institution = {{INRIA Rennes - Bretagne Atlantique and University of Rennes 1, France}},
+  year        = {2018},
+  month       = Nov
+}
+@inproceedings{2018-hotedge-session-consistency,
+  author    = {Seyed Hossein Mortazavi and Bharath Balasubramanian and Eyal de Lara and Shankaranarayanan Puzhavakath Narayanan},
+  title     = {Toward Session Consistency for the Edge},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@ARTICLE{2019-edgedb,  
+author={Yang Yang and Qiang Cao and Hong Jiang },  
+journal={IEEE Access},
+title={EdgeDB: An Efficient Time-Series Database for Edge Computing}, 
+year={2019},  
+volume={7},  
+number={},  
+pages={142295-142307},
+}
+
+@INPROCEEDINGS{2019-arxiv-tdb1,
+  author    = {Shuai Zhang and
+               Wenxi Zeng and
+               I{-}Ling Yen and
+               Farokh B. Bastani},
+booktitle={IEEE International Symposium on High Assurance Systems Engineering (HASE)},   
+title={Semantically Enhanced Time Series Databases in IoT-Edge-Cloud Infrastructure},   
+year={2019},  
+pages={25-32}
+}
+
+@article{2019-cacm-federated,
+  author     = {Yang, Qiang and Liu, Yang and Chen, Tianjian and Tong, Yongxin},
+  title      = {Federated Machine Learning: Concept and Applications},
+  year       = {2019},
+  volume     = {10},
+  number     = {2},
+  journal    = {ACM Transactions on Intelligent Systems and Technology}
+}
+
+@inproceedings{2019-iotdi-hetro,
+  author    = {Zhang, Daniel (Yue) and Rashid, Tahmid and Li, Xukun and Vance, Nathan and Wang, Dong},
+  title     = {HeteroEdge: Taming the Heterogeneity of Edge Computing System in Social Sensing},
+  year      = {2019},
+  booktitle = {ACM/IEEE International Conference on Internet of Things Design and Implementation (IoTDI)},
+  pages     = {37–48}
+}
+  
+@article{2019-algocloud-egde-monitoring,
+  author     = {Roger Pueyo Centelles and Mennan Selimi and Felix Freitag and Leandro Navarro},
+  title      = {A Monitoring System for Distributed Edge Infrastructures with Decentralized Coordination},
+  year       = {2019},
+  journal    = {ALGOCLOUD}
+}
+
+@article{2019-ieee-edge-game,  
+  author   = {Xu Zhang and Hao Chen and Zhao and Zhan Ma and Yiling Xu and Haojun Huang and Hao Yin and Dapeng Oliver Wu}, 
+  journal  = {IEEE Wireless Communications},
+  title    = {Improving Cloud Gaming Experience through Mobile Edge Computing},
+  year     = {2019},
+  volume   = {26},
+  number   = {4},
+  pages    = {178-183}
+}
+
+@article{2019-cacm-serverless,
+  author     = {Castro, Paul and Ishakian, Vatche and Muthusamy, Vinod and Slominski, Aleksander},
+  title      = {The Rise of Serverless Computing},
+  year       = {2019},
+  volume     = {62},
+  number     = {12},
+  journal    = {Communications of the ACM},
+  pages      = {44–54}
+}
+
+@inproceedings{2019-hotedge-ai-serverless,
+  author    = {Thomas Rausch and Waldemar Hummer and Vinod Muthusamy and Alexander Rashed and Schahram Dustdar},
+  title     = {Towards a Serverless Platform for Edge {AI}},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-iotdi-serverless,
+  author    = {Hall, Adam and Ramachandran, Umakishore},
+  title     = {An Execution Model for Serverless Functions at the Edge},
+  year      = {2019},
+  booktitle = {ACM/IEEE International Conference on Internet of Things Design and Implementation (IoTDI)},
+  pages     = {225–236}
+}
+
+@article{2019-arxiv-internet-of-vehicles,
+  author = {Jun Zhang and Khaled B. Letaief},
+  journal={Proceedings of the IEEE}, 
+  title={Mobile Edge Intelligence and Computing for the Internet of Vehicles},
+  year={2020},
+  volume={108},
+  number={2},
+  pages={246-261},
+}
+
+@inproceedings{2019-sec-aerial-sensing,
+  author    = {Boubin, Jayson G. and Babu, Naveen T. R. and Stewart, Christopher and Chumley, John and Zhang, Shiqi},
+  title     = {Managing Edge Resources for Fully Autonomous Aerial Systems},
+  year      = {2019},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+  pages     = {74–87}
+}
+ 
+
+@inproceedings{2019-sec-fcooper,
+  author    = {Chen, Qi and Ma, Xu and Tang, Sihai and Guo, Jingda and Yang, Qing and Fu, Song},
+  title     = {F-Cooper: Feature Based Cooperative Perception for Autonomous Vehicle Edge Computing System Using 3D Point Clouds},
+  year      = {2019},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+  pages     = {88–100},
+  numpages  = {13}
+}
+
+@inproceedings{2019-sec-couper,
+  author    = {Hsu, Ke-Jou and Bhardwaj, Ketan and Gavrilovska, Ada},
+  title     = {Couper: DNN Model Slicing for Visual Analytics Containers at the Edge},
+  year      = {2019},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+  pages     = {179–194}
+}
+  
+@article{2019-ieee-ml-survey,
+  author   = { Jiasi Chen and Xukan Ran },
+  journal  = {Proceedings of the IEEE},
+  title    = {Deep Learning With Edge Computing: A Review},
+  year     = {2019},
+  volume   = {107},
+  number   = {8},
+  pages    = {1655-1674}
+}
+
+@inproceedings{2019-sec-cec,
+  author    = {Zhang, Xingzhou and Qiao, Mu and Liu, Liangkai and Xu, Yunfei and Shi, Weisong},
+  title     = {Collaborative Cloud-Edge Computation for Personalized Driving Behavior Modeling},
+  year      = {2019},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+  pages     = {209–221}
+}
+
+@inproceedings{2019-sec-defog,
+  author    = {McChesney, Jonathan and Wang, Nan and Tanwer, Ashish and de Lara, Eyal and Varghese, Blesson},
+  title     = {DeFog: Fog Computing Benchmarks},
+  year      = {2019},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+  pages     = {47–58}
+}
+
+@inproceedings{2019-hotedge-iot-cooperation,
+  author    = {Zach Leidall and Abhishek Chandra and Jon Weissman},
+  title     = {An Edge-based Framework for Cooperation in Internet of Things Applications},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-hotedge-decafe,
+  author    = {Dhruv Kumar and Aravind Alagiri Ramkumar and Rohit Sindhu and Abhishek Chandra},
+  title     = {DeCaf: Iterative Collaborative Processing over the Edge},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-xxx-serverless-edge,
+  author    = {Hall, Adam and Ramachandran, Umakishore},
+  title     = {An Execution Model for Serverless Functions at the Edge},
+  year      = {2019},
+  booktitle = {ACM/IEEE International Conference on Internet of Things Design and Implementation (IoTDI)},
+  pages     = {225–236}
+}
+
+@inproceedings{2019-hotedge-telepathology,
+  author    = {Alessio Sacco and Flavio Esposito and Princewill Okorie and Guido Marchetto},
+  title     = {LiveMicro: An Edge Computing System for Collaborative Telepathology},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-hotedge-serverless-edge,
+  author    = {Thomas Rausch and Waldemar Hummer and Vinod Muthusamy and Alexander Rashed and Schahram Dustdar},
+  title     = {Towards a Serverless Platform for Edge {AI}},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-hotedge-sc-training,
+  author    = {Yitao Chen and Kaiqi Zhao and Baoxin Li and Ming Zhao},
+  title     = {Exploring the Use of Synthetic Gradients for Distributed Deep Learning across Cloud and Edge Resources},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-hotedge-coll-learning,
+  author    = {Sidi Lu and Yongtao Yao and Weisong Shi},
+  title     = {Collaborative Learning on the Edges: A Case Study on Connected Vehicles},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+@inproceedings{2019-hotedge-deter-container,
+  author    = {Matthew Furlong and Andrew Quinn and Jason Flinn},
+  title     = {The Case for Determinism on the Edge},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2019-atc-crail,
+  author    = {Stuedi, Patrick and Trivedi, Animesh and Pfefferle, Jonas and Klimovic, Ana and Schuepbach, Adrian and Metzler, Bernard},
+  title     = {Unification of Temporary Storage in the Nodekernel Architecture},
+  year      = {2019},
+  booktitle = {USENIX Conference on Usenix Annual Technical Conference (ATC)},
+  pages     = {767–781}
+}
+
+@article{2019-arxiv-edge-connectivity,
+  author        = {Quoc{-}Viet Pham and
+               Fang Fang and
+               Ha{-}Nguyen Vu and
+               Mai Le and
+               Zhiguo Ding and
+               Long Bao Le and
+               Won{-}Joo Hwang},
+  title         = {A Survey of Multi-Access Edge Computing in 5G and Beyond: Fundamentals, Technology Integration, and State-of-the-Art},
+  journal       = {CoRR},
+  volume        = {abs/1906.08452},
+  year          = {2019}
+}
+
+
+@inproceedings{2019-hotmobile-reconf-streaming,
+  author    = {Tiwari, Abhishek and Ramprasad, Brian and Mortazavi, Seyed Hossein and Gabel, Moshe and Lara, Eyal de},
+  title     = {Reconfigurable Streaming for the Mobile Edge},
+  booktitle = {ACM International Workshop on Mobile Computing Systems and Applications (HotMobile)},
+  year      = {2019},
+  pages     = {153--158}
+} 
+
+@inproceedings{2018-hotedge-iot-ddos,
+  author    = {Ketan Bhardwaj and Joaquin Chung Miranda and Ada Gavrilovska},
+  title     = {Towards IoT-DDoS Prevention Using Edge Computing},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@inproceedings{2018-osdi-ray,
+  author    = {Moritz, Philipp and Nishihara, Robert and Wang, Stephanie and Tumanov, Alexey and Liaw, Richard and Liang, Eric and Elibol, Melih and Yang, Zongheng and Paul, William and Jordan, Michael I. and et al.},
+  title     = {Ray: A Distributed Framework for Emerging AI Applications},
+  year      = {2018},
+  booktitle = {USENIX Conference on Operating Systems Design and Implementation (OSDI)},
+  pages     = {561–577}
+}
+
+@inproceedings{2018-hotedge-edgecons,
+  author    = {Zijiang Hao and Shanhe Yi and Qun Li},
+  title     = {EdgeCons: Achieving Efficient Consensus in Edge Computing Networks},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@inproceedings{2018-debs-fogstore,
+  author    = {Gupta, Harshit and Ramachandran, Umakishore},
+  title     = {FogStore: A Geo-Distributed Key-Value Store Guaranteeing Low Latency for Strongly Consistent Access},
+  booktitle = {ACM International Conference on Distributed and Event-based Systems (DEBS)},
+  year      = {2018},
+  pages     = {148--159}
+} 
+
+
+@inproceedings{2018-mobisys-pathstore,
+  author    = {Mortazavi, Seyed Hossein and Balasubramanian, Bharath and de Lara, Eyal and Narayanan, Shankaranarayanan Puzhavakath},
+  title     = {Pathstore, A Data Storage Layer For The Edge},
+  booktitle = {ACM Annual International Conference on Mobile Systems, Applications, and Services (MobiSys)},
+  year      = {2018},
+  pages     = {519--519}
+} 
+
+@article{2018-ieee-more-serverless,
+  author   = {Erwin van Eyk and Lucian Toader and Sacheendra Talluri and Laurens Versluis and Alexandru Uță and Alexandru Iosup},
+  journal  = {IEEE Internet Computing},
+  title    = {Serverless is More: From PaaS to Present Cloud Computing},
+  year     = {2018},
+  volume   = {22},
+  number   = {5},
+  pages    = {8-17}
+}
+
+@inproceedings{2017-ccgrid-stateless-streaming,
+  author    = {Marcu, Ovidiu-Cristian and Tudoran, Radu and Nicolae, Bogdan and Costan, Alexandru and Antoniu, Gabriel and P\'{e}rez-Hern\'{a}ndez, Mar\'{\i}a S.},
+  title     = {Exploring Shared State in Key-Value Store for Window-Based Multi-Pattern Streaming Analytics},
+  year      = {2017},
+  booktitle = {IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid)},
+  pages     = {1044–1052}
+}
+  
+@inproceedings{2012-osdi-spanner,
+author = {Corbett, James C. and Dean, Jeffrey and Epstein, Michael and Fikes, Andrew and Frost, Christopher and Furman, J. J. and Ghemawat, Sanjay and Gubarev, Andrey and Heiser, Christopher and Hochschild, Peter and Hsieh, Wilson and Kanthak, Sebastian and Kogan, Eugene and Li, Hongyi and Lloyd, Alexander and Melnik, Sergey and Mwaura, David and Nagle, David and Quinlan, Sean and Rao, Rajesh and Rolig, Lindsay and Saito, Yasushi and Szymaniak, Michal and Taylor, Christopher and Wang, Ruth and Woodford, Dale},
+title = {Spanner: Google's Globally-Distributed Database},
+year = {2012},
+publisher = {USENIX Association},
+booktitle = {Proceedings of the 10th USENIX Conference on Operating Systems Design and Implementation},
+pages = {251–264},
+numpages = {14},
+address = {Hollywood, CA, USA},
+series = {OSDI'12}
+}
+
+@article{2012-vldb-dgl,
+  author     = {Low, Yucheng and Bickson, Danny and Gonzalez, Joseph and Guestrin, Carlos and Kyrola, Aapo and Hellerstein, Joseph M.},
+  title      = {Distributed GraphLab: A Framework for Machine Learning and Data Mining in the Cloud},
+  year       = {2012},
+  volume     = {5},
+  number     = {8},
+  journal    = {Very Large Data Bases (VLDB)},
+  pages      = {716–727}
+}
+  
+@inproceedings{2018-nips-serverless-ml,
+  author    = { Joao Carreira and Pedro Fonseca and Alexey Tumanov and Andrew Zhang and Randy Katz},
+  title     = {A Case for Serverless Machine Learning},
+  year      = {2018},
+  booktitle = {ACM Workshop on Systems for ML and Open Source Software (MLSys)}
+}
+
+@inproceedings{2019-hotos-fastkv,
+  author    = {Adya, Atul and Grandl, Robert and Myers, Daniel and Qin, Henry},
+  title     = {Fast Key-Value Stores: An Idea Whose Time Has Come and Gone},
+  year      = {2019},
+  booktitle = {ACM Workshop on Hot Topics in Operating Systems (HotOS)},
+  pages     = {113–119}
+}
+  
+@inproceedings{2019-socc-serverless,
+  author    = {Zhang, Tian and Xie, Dong and Li, Feifei and Stutsman, Ryan},
+  title     = {Narrowing the Gap Between Serverless and Its State with Storage Functions},
+  year      = {2019},
+  booktitle = {ACM Symposium on Cloud Computing (SoCC)},
+  pages     = {1–12},
+  numpages  = {12}
+}
+  
+  
+@inproceedings{2019-hotedge-p2p,
+  author    = {Gala Yadgar and Oleg Kolosov and Mehmet Fatih Aktas and Emina Soljanin},
+  title     = {Modeling The Edge: Peer-to-Peer Reincarnated},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2019}
+}
+
+@inproceedings{2015-wfiot-topology-analytics,
+  author    = { Bin Cheng and Apostolos Papageorgiou and Flavio Cirillo and Ernoe Kovacs },
+  booktitle = {IEEE World Forum on Internet of Things (WF-IoT)},
+  title     = {GeeLytics: Geo-distributed edge analytics for large scale IoT systems based on dynamic topology},
+  year      = {2015},
+  pages     = {565-570}
+}
+
+@article{2015-sigcomm-timely,
+  author     = {Mittal, Radhika and Lam, Vinh The and Dukkipati, Nandita and Blem, Emily and Wassel, Hassan and Ghobadi, Monia and Vahdat, Amin and Wang, Yaogong and Wetherall, David and Zats, David},
+  title      = {TIMELY: RTT-Based Congestion Control for the Datacenter},
+  year       = {2015},
+  volume     = {45},
+  number     = {4},
+  journal    = {ACM SIGCOMM Computer Communication Review},
+  pages      = {537–550}
+}
+  
+@inproceedings{2015-drive-share,
+  author    = {M. {Kuderer} and S. {Gulati} and W. {Burgard}},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {Learning driving styles for autonomous vehicles from demonstration},
+  year      = {2015},
+  pages     = {2641-2646}
+}
+
+@inproceedings{2015-ccdb,
+author = {Diao, Ziqiang},
+year = {2013},
+month = {May},
+pages = {16-21},
+title = {Consistency models for Cloud-based online games: The storage system's perspective},
+volume = {1020},
+booktitle={GI-Workshop on Foundations of Databases (Grundlagen von Daten-banken)},
+}
+
+@inproceedings{2015-wowmom-edgebuffer,
+  author    = {Feixiong Zhang and
+               Chenren Xu and
+               Yanyong Zhang and
+               K. K. Ramakrishnan and
+               Shreyasee Mukherjee and
+               Roy D. Yates and
+               Thu D. Nguyen},
+  title     = {EdgeBuffer: Caching and prefetching content at the edge in the MobilityFirst future Internet architecture},
+  booktitle = {{IEEE} International Symposium on {A} World of Wireless, Mobile
+               and Multimedia Networks (WoWMoM)},
+  pages     = {1--9},
+  year      = {2015}
+}
+
+@inproceedings{2013-sosp-pileus,
+  author    = {Terry, Douglas B. and Prabhakaran, Vijayan and Kotla, Ramakrishna and Balakrishnan, Mahesh and Aguilera, Marcos K. and Abu-Libdeh, Hussam},
+  title     = {Consistency-Based Service Level Agreements for Cloud Storage},
+  year      = {2013},
+  booktitle = {ACM Symposium on Operating Systems Principles (SOSP)},
+  pages     = {309–324}
+}
+
+@inproceedings{2013-hotdep-pscloud,
+  author    = {Sobir Bazarbayev and
+               Matti A. Hiltunen and
+               Kaustubh R. Joshi and
+               William H. Sanders and
+               Richard D. Schlichting},
+  title     = {PSCloud: a durable context-aware personal storage cloud},
+  booktitle = {ACM Workshop on Hot Topics in Dependable Systems (HotDep)},
+  pages     = {9:1--9:6},
+  year      = {2013}
+}
+
+@inproceedings{2010-socc-ycsb,
+  author    = {Cooper, Brian F. and Silberstein, Adam and Tam, Erwin and Ramakrishnan, Raghu and Sears, Russell},
+  title     = {Benchmarking Cloud Serving Systems with YCSB},
+  year      = {2010},
+  booktitle = {ACM Symposium on Cloud Computing (SoCC)},
+  pages     = {143–154}
+}
+  
+@inproceedings{2010-osdi-piccolo,
+  author    = {Power, Russell and Li, Jinyang},
+  title     = {Piccolo: Building Fast, Distributed Programs with Partitioned Tables},
+  year      = {2010},
+  booktitle = {USENIX Conference on Operating Systems Design and Implementation (OSDI)},
+  pages     = {293–306}
+}
+
+@inproceedings{2010-iptps-amazingstore,
+  author    = {Zhi Yang and
+               Ben Y. Zhao and
+               Yuanjian Xing and
+               Song Ding and
+               Feng Xiao and
+               Yafei Dai},
+  title     = {AmazingStore: available, low-cost online storage service using cloudlets},
+  booktitle = {International Conference on Peer-to-Peer Systems (IPTPS)},
+  year      = {2010}
+}
+
+@inproceedings{2018-hotedge-datafog,
+  author    = {Harshit Gupta and
+               Zhuangdi Xu and
+               Umakishore Ramachandran},
+  title     = {DataFog: Towards a Holistic Data Management Platform for the IoT Age at the Network Edge},
+  booktitle = {{USENIX} Workshop on Hot Topics in Edge Computing (HotEdge)},
+  year      = {2018}
+}
+
+@inproceedings{2018-sigmod-dpaxos,
+  author    = {Faisal Nawab and
+               Divyakant Agrawal and
+               Amr {El Abbadi}},
+  title     = {DPaxos: Managing Data Closer to Users for Low-Latency and Mobile Applications},
+  booktitle = {ACM International Conference on Management of
+               Data (SIGCOMM)},
+  pages     = {1221--1236},
+  year      = {2018}
+}
+
+@article{2013-vldb-f1,
+  author  = {Jeff Shute and
+               Radek Vingralek and
+               Bart Samwel and
+               Ben Handy and
+               Chad Whipkey and
+               Eric Rollins and
+               Mircea Oancea and
+               Kyle Littlefield and
+               David Menestrina and
+               Stephan Ellner and
+               John Cieslewicz and
+               Ian Rae and
+               Traian Stancescu and
+               Himani Apte},
+  title   = {{F1:} {A} Distributed {SQL} Database That Scales},
+  journal = {Very Large Data Bases (VLDB)},
+  volume  = {6},
+  number  = {11},
+  pages   = {1068--1079},
+  year    = {2013}
+}
+
+@article{2013-tocs-spanner,
+  author  = {James C. Corbett and
+               Jeffrey Dean and
+               Michael Epstein and
+               Andrew Fikes and
+               Christopher Frost and
+               J. J. Furman and
+               Sanjay Ghemawat and
+               Andrey Gubarev and
+               Christopher Heiser and
+               Peter Hochschild and
+               Wilson C. Hsieh and
+               Sebastian Kanthak and
+               Eugene Kogan and
+               Hongyi Li and
+               Alexander Lloyd and
+               Sergey Melnik and
+               David Mwaura and
+               David Nagle and
+               Sean Quinlan and
+               Rajesh Rao and
+               Lindsay Rolig and
+               Yasushi Saito and
+               Michal Szymaniak and
+               Christopher Taylor and
+               Ruth Wang and
+               Dale Woodford},
+  title   = {Spanner: Google's Globally Distributed Database},
+  journal = {{ACM} Transactions Computer Systems},
+  volume  = {31},
+  number  = {3},
+  pages   = {8:1--8:22},
+  year    = {2013}
+}
+
+@inproceedings{2013-atc-tao,
+  author    = {Nathan Bronson and
+               Zach Amsden and
+               George Cabrera and
+               Prasad Chakka and
+               Peter Dimov and
+               Hui Ding and
+               Jack Ferris and
+               Anthony Giardullo and
+               Sachin Kulkarni and
+               Harry C. Li and
+               Mark Marchukov and
+               Dmitri Petrov and
+               Lovro Puzar and
+               Yee Jiun Song and
+               Venkateshwaran Venkataramani},
+  title     = {{TAO:} Facebook's Distributed Data Store for the Social Graph},
+  booktitle = {{USENIX} Annual Technical Conference (ATC)},
+  pages     = {49--60},
+  year      = {2013}
+}
+
+@inproceedings{2019-bigbdata-aves,
+  title     = {Aves: A Framework for Energy-efficient Stream Analytics across Low-power Devices},
+  author    = {{Bharath Das}, Roshan and Marc Makkes and Alexandru Uta and Lin Wang and Henri Bal},
+  year      = {2019},
+  month     = {12},
+  booktitle = {IEEE Big Data}
+}
+
+@inproceedings{2019-nsdi-simon,
+  author    = {Yilong Geng and Shiyu Liu and Zi Yin and Ashish Naik and Balaji Prabhakar and Mendel Rosenblum and Amin Vahdat},
+  title     = {{SIMON}: A Simple and Scalable Method for Sensing, Inference and Measurement in Data Center Networks},
+  booktitle = {{USENIX} Symposium on Networked Systems Design and Implementation ({NSDI})},
+  year      = {2019},
+  pages     = {549--564}
+}
+
+@article{2019-vldb-slog,
+  author  = {Kun Ren and
+               Dennis Li and
+               Daniel J. Abadi},
+  title   = {{SLOG:} Serializable, Low-latency, Geo-replicated Transactions},
+  journal = {{Very Large Data Bases (VLDB)}},
+  volume  = {12},
+  number  = {11},
+  pages   = {1747--1761},
+  year    = {2019}
+}
+
+@inproceedings{2018-edbt-gplacer,
+  author    = {Victor Zakhary and
+               Faisal Nawab and
+               Divy Agrawal and
+               Amr {El Abbadi}},
+  title     = {Global-Scale Placement of Transactional Data Stores},
+  booktitle = {International Conference on Extending Database
+               Technology (EDBT)},
+  pages     = {385--396},
+  year      = {2018}
+}
+
+@article{2010-osr-cassandra,
+  author  = {Avinash Lakshman and
+               Prashant Malik},
+  title   = {Cassandra: a decentralized structured storage system},
+  journal = {ACM SIGOPS Operating Systems Review},
+  volume  = {44},
+  number  = {2},
+  pages   = {35--40},
+  year    = {2010}
+}
+
+@inproceedings{2007-pdsw-rados,
+  author    = {Sage A. Weil and
+               Andrew W. Leung and
+               Scott A. Brandt and
+               Carlos Maltzahn},
+  title     = {{RADOS:} a scalable, reliable storage service for petabyte-scale storage clusters},
+  booktitle = {ACM International Petascale Data Storage Workshop (PDSW)},
+  pages     = {35--44},
+  year      = {2007}
+}
+
+@inproceedings{2018-sec-cavbench,
+  author    = { Yifan Wang and Shaoshan Liu and Xiaopei Wu and Weisong Shi },
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {CAVBench: A Benchmark Suite for Connected and Autonomous Vehicles},
+  year      = {2018},
+  volume    = {},
+  number    = {},
+  pages     = {30-42}
+}
+
+@inproceedings{2018-sec-safeshareride,
+  author    = {L. {Liu} and X. {Zhang} and M. {Qiao} and W. {Shi}},
+  booktitle = {IEEE/ACM Symposium on Edge Computing (SEC)},
+  title     = {SafeShareRide: Edge-Based Attack Detection in Ridesharing Services},
+  year      = {2018},
+  volume    = {},
+  number    = {},
+  pages     = {17-29}
+}
+
+@inproceedings{2014-icra-driving-fusion,
+  author    = {Hyunggi Cho and Young-Woo Seo and B.V.K. Vijaya Kumar and Ragunathan (Raj) Rajkumar},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {A multi-sensor fusion system for moving object detection and tracking in urban driving environments},
+  year      = {2014},
+  volume    = {},
+  number    = {},
+  pages     = {1836-1843}
+}
+
+@article{2014-sprinter-hybrid-game,
+  author     = {Choy, Sharon and Wong, Bernard and Simon, Gwendal and Rosenberg, Catherine},
+  title      = {A Hybrid Edge-Cloud Architecture for Reducing on-Demand Gaming Latency},
+  year       = {2014},
+  volume     = {20},
+  number     = {5},
+  journal    = {Multimedia Systems},
+  pages      = {503–519}
+}
+  
+@article{2014-csur-gaming,
+  author     = {Yahyavi, Amir and Kemme, Bettina},
+  title      = {Peer-to-Peer Architectures for Massively Multiplayer Online Games: A Survey},
+  year       = {2013},
+  volume     = {46},
+  number     = {1},
+  journal    = {ACM Computing Surveys}
+}
+ 
+
+@article{2014-arxiv-ipfs,
+  author        = {Juan Benet},
+  title         = {{IPFS} - Content Addressed, Versioned, {P2P} File System},
+  journal       = {CoRR},
+  volume        = {abs/1407.3561},
+  year          = {2014}
+}
+
+@inproceedings{2011-springer-crdt,
+  author    = {Shapiro, Marc and Pregui\c{c}a, Nuno and Baquero, Carlos and Zawirski, Marek},
+  title     = {Conflict-Free Replicated Data Types},
+  year      = {2011},
+  booktitle = {International Conference on Stabilization, Safety, and Security of Distributed Systems (SSS)},
+  pages     = {386–400}
+}
+  
+@inproceedings{2011-cidr-megastore,
+  author    = {Jason Baker and
+               Chris Bond and
+               James C. Corbett and
+               J. J. Furman and
+               Andrey Khorlin and
+               James Larson and
+               Jean{-}Michel Leon and
+               Yawei Li and
+               Alexander Lloyd and
+               Vadim Yushprakh},
+  title     = {Megastore: Providing Scalable, Highly Available Storage for Interactive Services},
+  booktitle = {Biennial Conference on Innovative Data Systems
+               Research (CIDR)},
+  pages     = {223--234},
+  year      = {2011}
+}
+
+@inproceedings{2018-socc-kurma,
+  author    = {Kirill Bogdanov and
+               Waleed Reda and
+               Gerald Q. Maguire Jr. and
+               Dejan Kostic and
+               Marco Canini},
+  title     = {Fast and Accurate Load Balancing for Geo-Distributed Storage Systems},
+  booktitle = {{ACM} Symposium on Cloud Computing (SoCC)},
+  pages     = {386--400},
+  publisher = {{ACM}},
+  year      = {2018}
+}
+
+@inproceedings{2018-iot-clock-sync,
+  author    = {Mani, Sathiya Kumaran and Durairajan, Ramakrishnan and Barford, Paul and Sommers, Joel},
+  title     = {An Architecture for IoT Clock Synchronization},
+  year      = {2018},
+  booktitle = {International Conference on the Internet of Things (IOT)}
+}
+  
+@inproceedings{2017-podc-edge-ecodes,
+  author    = {Konwar, Kishori M. and Prakash, N. and Lynch, Nancy and M\'{e}dard, Muriel},
+  title     = {A Layered Architecture for Erasure-Coded Consistent Distributed Storage},
+  year      = {2017},
+  booktitle = {ACM Symposium on Principles of Distributed Computing (PODC)},
+  pages     = {63–72}
+}
+  
+@inproceedings{2017-mecomm-connected-vehciles,
+  author    = {Grewe, Dennis and Wagner, Marco and Arumaithurai, Mayutan and Psaras, Ioannis and Kutscher, Dirk},
+  title     = {Information-Centric Mobile Edge Computing for Connected Vehicle Environments: Challenges and Research Directions},
+  year      = {2017},
+  booktitle = {ACM Workshop on Mobile Edge Communications (MECOMM)},
+  pages     = {7–12}
+}
+
+@inproceedings{2017-sec-traffic,
+  author    = {Kar, Gorkem and Jain, Shubham and Gruteser, Marco and Bai, Fan and Govindan, Ramesh},
+  title     = {Real-Time Traffic Estimation at Vehicular Edge Nodes},
+  year      = {2017},
+  booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)}
+}
+  
+@inproceedings{2017-asplos-ns,
+  author    = {Kang, Yiping and Hauswald, Johann and Gao, Cao and Rovinski, Austin and Mudge, Trevor and Mars, Jason and Tang, Lingjia},
+  title     = {Neurosurgeon: Collaborative Intelligence Between the Cloud and Mobile Edge},
+  year      = {2017},
+  booktitle = {International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  pages     = {615–629}
+}
+
+@article{2017-tpds-fog-gaming,
+  author   = { Yuhua Lin and Haiying Shen },
+  journal  = {IEEE Transactions on Parallel and Distributed Systems},
+  title    = {CloudFog: Leveraging Fog to Extend Cloud Gaming for Thin-Client MMOG with High Quality of Service},
+  year     = {2017},
+  volume   = {28},
+  number   = {2},
+  pages    = {431-445}
+}
+
+@inproceedings{2017-hash-hthash,
+  author    = {Xuefeng Guan and
+               Cheng Bo and
+               Zhenqiang Li and
+               Yaojin Yu},
+  title     = {ST-hash: An efficient spatiotemporal index for massive trajectory
+               data in a NoSQL database},
+  booktitle = {International Conference on Geoinformatics, Geoinformatics},
+  pages     = {1--7},
+  year      = {2017}
+}
+
+@book{2012-hash-hilbert,
+  title     = {Space-filling curves},
+  author    = {Sagan, Hans},
+  year      = {2012},
+  publisher = {Springer Science \& Business Media}
+}
+
+@inproceedings{2012-sensys-tracking,
+  author    = {A. B. M. Musa and
+               Jakob Eriksson},
+  title     = {Tracking unmodified smartphones using wi-fi monitors},
+  booktitle = {{ACM} Conference on Embedded Network Sensor Systems (SenSys)},
+  pages     = {281--294},
+  year      = {2012}
+}
+
+@inproceedings{2014-infocom-trakcing,
+  author    = {Ying Zhang},
+  title     = {User mobility from the view of cellular data networks},
+  booktitle = {{IEEE} Conference on Computer Communications (INFOCOM)},
+  pages     = {1348--1356},
+  year      = {2014}
+}
+
+@article{2013-tmc-mobility,
+  author  = {Addison Chan and
+               Frederick W. B. Li},
+  title   = {Utilizing Massive Spatiotemporal Samples for Efficient and Accurate Trajectory Prediction},
+  journal = {{IEEE} Transactions on Mobible Computing},
+  volume  = {12},
+  number  = {12},
+  pages   = {2346--2359},
+  year    = {2013}
+}
+
+@article{2013-cst-vne,
+  author  = {Andreas Fischer and
+               Juan Felipe Botero and
+               Michael Till Beck and
+               Hermann de Meer and
+               Xavier Hesselbach},
+  title   = {Virtual Network Embedding: {A} Survey},
+  journal = {{IEEE} Communications Surveys and Tutorials},
+  volume  = {15},
+  number  = {4},
+  pages   = {1888--1906},
+  year    = {2013}
+}
+
+@article{2019-ton-vne,
+  author  = {Matthias Rost and Stefan Schmid},
+  title   = {Virtual Network Embedding Approximations: Leveraging Randomized Rounding},
+  journal = {{IEEE/ACM} Transactions on Networking},
+  volume  = {27},
+  number  = {5},
+  pages   = {2071--2084},
+  year    = {2019}
+}
+
+@inproceedings{2019-middleware-cep,
+  author    = {Manisha Luthra and
+               Sebastian Hennig and
+               Pratyush Agnihotri and
+               Lin Wang and
+               Boris Koldehofe},
+  title     = {Highly Flexible Server Agnostic Complex Event Processing Operators},
+  booktitle = {ACM International Middleware Conference (Middleware)},
+  pages     = {11--12},
+  year      = {2019}
+}
+
+@inproceedings{2018-aaai-cell,
+  author    = {Sandeep Chinchali and
+               Pan Hu and
+               Tianshu Chu and
+               Manu Sharma and
+               Manu Bansal and
+               Rakesh Misra and
+               Marco Pavone and
+               Sachin Katti},
+  title     = {Cellular Network Traffic Scheduling With Deep Reinforcement Learning},
+  booktitle = {{AAAI} Conference on Artificial Intelligence (AAAI)},
+  pages     = {766--774},
+  year      = {2018}
+}
+
+@inproceedings{2016-debs-foglet,
+  author    = {Enrique Saurez and
+               Kirak Hong and
+               Dave Lillethun and
+               Umakishore Ramachandran and
+               Beate Ottenw{\"{a}}lder},
+  title     = {Incremental deployment and migration of geo-distributed situation
+               awareness applications in the fog},
+  booktitle = {{ACM} International Conference on Distributed
+               and Event-based Systems (DEBS)},
+  pages     = {258--269},
+  year      = {2016}
+}
+
+@inproceedings{2016-can-databox,
+  author    = {Richard Mortier and
+               Jianxin R. Zhao and
+               Jon Crowcroft and
+               Liang Wang and
+               Qi Li and
+               Hamed Haddadi and
+               Yousef Amar and
+               Andy Crabtree and
+               James A. Colley and
+               Tom Lodge and
+               Tosh Brown and
+               Derek McAuley and
+               Chris Greenhalgh},
+  title     = {Personal Data Management with the Databox: What's Inside the Box?},
+  booktitle = {{ACM} Workshop on Cloud-Assisted Networking (CAN)},
+  pages     = {49--54},
+  year      = {2016}
+}
+
+@article{2020-iotj-vu,
+  author  = {Hui Sun and
+               Weisong Shi and
+               Xu Liang and
+               Ying Yu},
+  title   = {{VU:} Edge Computing-Enabled Video Usefulness Detection and its Application in Large-Scale Video Surveillance Systems},
+  journal = {{IEEE} Internet of Things Journal},
+  volume  = {7},
+  number  = {2},
+  pages   = {800--817},
+  year    = {2020}
+}
+
+@article{2019-ieee-special-issue-video,
+  author  = {Ganesh Ananthanarayanan and
+               Weisong Shi},
+  title   = {Live Video Analytics},
+  journal = {{IEEE} Internet Computing},
+  volume  = {23},
+  number  = {4},
+  pages   = {8--9},
+  year    = {2019}
+}
+
+@inproceedings{2019-sec-quartz,
+author = {D’souza, Sandeep and Koehler, Heiko and Joshi, Akhilesh and Vaghani, Satyam and Rajkumar, Ragunathan (Raj)},
+title = {Quartz: Time-as-a-Service for Coordination in Geo-Distributed Systems},
+year = {2019},
+booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+pages = {264–279}
+}
+
+@inproceedings{2019-sec-app-fail,
+author = {Nguyen, Chanh and Mehta, Amardeep and Klein, Cristian and Elmroth, Erik},
+title = {Why Cloud Applications Are Not Ready for the Edge (Yet)},
+year = {2019},
+booktitle = {ACM/IEEE Symposium on Edge Computing (SEC)},
+pages = {250–263}
+}
+  
+@article{2019-pieee-driving,
+  author  = {Shaoshan Liu and
+               Liangkai Liu and
+               Jie Tang and
+               Bo Yu and
+               Yifan Wang and
+               Weisong Shi},
+  title   = {Edge Computing for Autonomous Driving: Opportunities and Challenges},
+  journal = {Proceedings of the {IEEE}},
+  volume  = {107},
+  number  = {8},
+  pages   = {1697--1716},
+  year    = {2019}
+}
+
+@inproceedings {2018-nsdi-clock,
+author = {Yilong Geng and Shiyu Liu and Zi Yin and Ashish Naik and Balaji Prabhakar and Mendel Rosenblum and Amin Vahdat},
+title = {Exploiting a Natural Network Effect for Scalable, Fine-grained Clock Synchronization},
+booktitle = {{USENIX} Symposium on Networked Systems Design and Implementation (NSDI)},
+year = {2018},
+pages = {81--94}
+}
+
+@inproceedings{2018-sec-edgebox,
+  author    = {Bing Luo and
+               Sheng Tan and
+               Zhifeng Yu and
+               Weisong Shi},
+  title     = {EdgeBox: Live Edge Video Analytics for Near Real-Time Event Detection},
+  booktitle = {{IEEE/ACM} Symposium on Edge Computing (SEC)},
+  pages     = {347--348},
+  year      = {2018}
+}
+
+@inproceedings{2017-sec-parkmaster,
+  author    = {Giulio Grassi and
+               Kyle Jamieson and
+               Paramvir Bahl and
+               Giovanni Pau},
+  title     = {Parkmaster: an in-vehicle, edge-based video analytics service for
+               detecting open parking spaces in urban environments},
+  booktitle = {{ACM/IEEE} Symposium on Edge Computing (SEC)},
+  pages     = {16:1--16:14},
+  year      = {2017}
+}
+
+@inproceedings{2018-infocom-item,
+  author    = {Lin Wang and
+               Lei Jiao and
+               Ting He and
+               Jun Li and
+               Max M{\"{u}}hlh{\"{a}}user},
+  title     = {Service Entity Placement for Social Virtual Reality Applications in Edge Computing},
+  booktitle = {{IEEE} International Conference on Computer Communications ({INFOCOM})},
+  pages     = {468--476},
+  year      = {2018}
+}
