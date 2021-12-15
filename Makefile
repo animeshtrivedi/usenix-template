@@ -1,4 +1,4 @@
-LATEX= pdflatex -shell-escape
+LATEX= pdflatex --shell-escape
 BIBTEX= bibtex
 XDVI = xdvi
 DVIPDF= dvipdfm -p letter
