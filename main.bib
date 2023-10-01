@@ -3,6 +3,135 @@
 %% from source `main' on 2019/03/18.
 %%
 %-------------------------------------------------------------------------------
+
+@inproceedings{2023-asplos-tpp,
+author = {Maruf, Hasan Al and Wang, Hao and Dhanotia, Abhishek and Weiner, Johannes and Agarwal, Niket and Bhattacharya, Pallab and Petersen, Chris and Chowdhury, Mosharaf and Kanaujia, Shobhit and Chauhan, Prakash},
+title = {TPP: Transparent Page Placement for CXL-Enabled Tiered-Memory},
+year = {2023},
+isbn = {9781450399180},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3582016.3582063},
+doi = {10.1145/3582016.3582063},
+abstract = {The increasing demand for memory in hyperscale applications has led to memory becoming a large portion of the overall datacenter spend. The emergence of coherent interfaces like CXL enables main memory expansion and offers an efficient solution to this problem. In such systems, the main memory can constitute different memory technologies with varied characteristics. In this paper, we characterize memory usage patterns of a wide range of datacenter applications across the server fleet of Meta. We, therefore, demonstrate the opportunities to offload colder pages to slower memory tiers for these applications. Without efficient memory management, however, such systems can significantly degrade performance. We propose a novel OS-level application-transparent page placement mechanism (TPP) for CXL-enabled memory. TPP employs a lightweight mechanism to identify and place hot/cold pages to appropriate memory tiers. It enables a proactive page demotion from local memory to CXL-Memory. This technique ensures a memory headroom for new page allocations that are often related to request processing and tend to be short-lived and hot. At the same time, TPP can promptly promote performance-critical hot pages trapped in the slow CXL-Memory to the fast local memory, while minimizing both sampling overhead and unnecessary migrations. TPP works transparently without any application-specific knowledge and can be deployed globally as a kernel release. We evaluate TPP with diverse memory-sensitive workloads in the production server fleet with early samples of new x86 CPUs with CXL 1.1 support. TPP makes a tiered memory system performant as an ideal baseline (&lt;1\% gap) that has all the memory in the local tier. It is 18\% better than today’s Linux, and 5–17\% better than existing solutions including NUMA Balancing and AutoTiering. Most of the TPP patches have been merged in the Linux v5.18 release while the remaining ones are just pending for more discussion.},
+booktitle = {Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 3},
+pages = {742–755},
+numpages = {14},
+keywords = {CXL-Memory, Heterogeneous System, Operating Systems, Datacenters, Memory Management, Tiered-Memory},
+location = {Vancouver, BC, Canada},
+series = {ASPLOS 2023}
+}
+
+@inproceedings{2023-asplos-pond,
+author = {Li, Huaicheng and Berger, Daniel S. and Hsu, Lisa and Ernst, Daniel and Zardoshti, Pantea and Novakovic, Stanko and Shah, Monish and Rajadnya, Samir and Lee, Scott and Agarwal, Ishwar and Hill, Mark D. and Fontoura, Marcus and Bianchini, Ricardo},
+title = {Pond: CXL-Based Memory Pooling Systems for Cloud Platforms},
+year = {2023},
+isbn = {9781450399166},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3575693.3578835},
+doi = {10.1145/3575693.3578835},
+abstract = {Public cloud providers seek to meet stringent performance requirements and low hardware cost. A key driver of performance and cost is main memory. Memory pooling promises to improve DRAM utilization and thereby reduce costs. However, pooling is challenging under cloud performance requirements. This paper proposes Pond, the first memory pooling system that both meets cloud performance goals and significantly reduces DRAM cost. Pond builds on the Compute Express Link (CXL) standard for load/store access to pool memory and two key insights. First, our analysis of cloud production traces shows that pooling across 8-16 sockets is enough to achieve most of the benefits. This enables a small-pool design with low access latency. Second, it is possible to create machine learning models that can accurately predict how much local and pool memory to allocate to a virtual machine (VM) to resemble same-NUMA-node memory performance. Our evaluation with 158 workloads shows that Pond reduces DRAM costs by 7\% with performance within 1-5\% of same-NUMA-node VM allocations.},
+booktitle = {Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+pages = {574–587},
+numpages = {14},
+keywords = {CXL, datacenter, cloud computing, memory pooling, Compute Express Link, memory disaggregation},
+location = {Vancouver, BC, Canada},
+series = {ASPLOS 2023}
+}
+
+@inproceedings{2023-sigmod-dissg-db,
+author = {Wang, Jianguo and Zhang, Qizhen},
+title = {Disaggregated Database Systems},
+year = {2023},
+isbn = {9781450395076},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3555041.3589403},
+doi = {10.1145/3555041.3589403},
+abstract = {Disaggregated database systems achieve unprecedented excellence in elasticity and resource utilization at the cloud scale and have gained great momentum from both industry and academia recently. Such systems are developed in response to the emerging trend of disaggregated data centers where resources are physically separated and connected through fast data center networks. Database management systems have been traditionally built based on monolithic architectures, so disaggregation fundamentally challenges the designs. On the other hand, disaggregation offers benefits like independent scaling of compute, memory, and storage. Nonetheless, there is a lack of systematic investigation into new research challenges and opportunities in recent disaggregated database systems.To provide database researchers and practitioners with insights into different forms of resource disaggregation, we take a snapshot of state-of-the-art disaggregated database systems and related techniques and present an in-depth tutorial. The primary goal is to better understand the enabling techniques and characteristics of resource disaggregation and its implications for next-generation database systems. To that end, we survey recent work on storage disaggregation, which separates secondary storage devices (e.g., SSDs) from compute servers and is widely deployed in current cloud data centers, and memory disaggregation, which further splits compute and memory with Remote Direct Memory Access (RDMA) and is driving the transformation of clouds. In addition, we mention two techniques that bring novel perspectives to the above two paradigms: persistent memory and Compute Express Link (CXL). Finally, we identify several directions that shed light on the future development of disaggregated database systems.},
+booktitle = {Companion of the 2023 International Conference on Management of Data},
+pages = {37–44},
+numpages = {8},
+keywords = {memory disaggregation, databases, storage disaggregation},
+location = {Seattle, WA, USA},
+series = {SIGMOD '23}
+}
+
+@article{2023-sigops-mem-dissg-infiniswap,
+author = {Al Maruf, Hasan and Chowdhury, Mosharaf},
+title = {Memory Disaggregation: Advances and Open Challenges},
+year = {2023},
+issue_date = {June 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {57},
+number = {1},
+issn = {0163-5980},
+url = {https://doi.org/10.1145/3606557.3606562},
+doi = {10.1145/3606557.3606562},
+abstract = {Compute and memory are tightly coupled within each server in traditional datacenters. Large-scale datacenter operators have identified this coupling as a root cause behind fleetwide resource underutilization and increasing Total Cost of Ownership (TCO). With the advent of ultra-fast networks and cache-coherent interfaces, memory disaggregation has emerged as a potential solution, whereby applications can leverage available memory even outside server boundaries.This paper summarizes the growing research landscape of memory disaggregation from a software perspective and introduces the challenges toward making it practical under current and future hardware trends. We also reflect on our seven-year journey in the SymbioticLab to build a comprehensive disaggregated memory system over ultra-fast networks. We conclude with some open challenges toward building next-generation memory disaggregation systems leveraging emerging cache-coherent interconnects.},
+journal = {SIGOPS Oper. Syst. Rev.},
+month = {jun},
+pages = {29–37},
+numpages = {9}
+}
+
+@article{2023-sigops-mem-dissg-vmware,
+author = {Aguilera, Marcos K. and Amaro, Emmanuel and Amit, Nadav and Hunhoff, Erika and Yelam, Anil and Zellweger, Gerd},
+title = {Memory Disaggregation: Why Now and What Are the Challenges},
+year = {2023},
+issue_date = {June 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {57},
+number = {1},
+issn = {0163-5980},
+url = {https://doi.org/10.1145/3606557.3606563},
+doi = {10.1145/3606557.3606563},
+abstract = {Hardware disaggregation has emerged as one of the most fundamental shifts in how we build computer systems over the past decades. While disaggregation has been successful for several types of resources (storage, power, and others), memory disaggregation has yet to happen. We make the case that the time for memory disaggregation has arrived. We look at past successful disaggregation stories and learn that their success depended on two requirements: addressing a burning issue and being technically feasible. We examine memory disaggregation through this lens and find that both requirements are finally met. Once available, memory disaggregation will require software support to be used effectively. We discuss some of the challenges of designing an operating system that can utilize disaggregated memory for itself and its applications.},
+journal = {SIGOPS Oper. Syst. Rev.},
+month = {jun},
+pages = {38–46},
+numpages = {9}
+}
+
+@inproceedings{2023-cheops-iouring,
+author = {Ren, Zebin and Trivedi, Animesh},
+title = {Performance Characterization of Modern Storage Stacks: POSIX I/O, Libaio, SPDK, and Io_uring},
+year = {2023},
+isbn = {9798400700811},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3578353.3589545},
+doi = {10.1145/3578353.3589545},
+abstract = {Linux storage stack offers a variety of storage I/O stacks and APIs such as POSIX I/O, asynchronous I/O (libaio), high-performance asynchronous I/O (emerging io_uring) or SPDK, the last of which completely bypasses the kernel. Despite their availability, there has not been a systematic study of their performance and overheads. In order to aid our understanding, in this work we systematically characterize performance, scalability and microarchitectural properties of popular Linux I/O APIs on high-performance storage hardware (Intel Optane SSDs). Our characterization reveals that: (1) at low I/O loads, all APIs perform competitively with each other, with polling helping the performance by 1.7X, but consuming 2.3X CPU instructions; (2) at high-loads and scale, io_uring is more than an order of magnitude slower than SPDK; (3) at high-loads and scale, the benchmarking tool (fio) itself becomes a bottleneck; (4) state-of-practice Linux block I/O schedulers (BFQ, mq-deadline, and Kyber) introduce significant (up to 50\%) overheads, and their use of global locks hinder their scalability. All artifacts from this work are available at https://github.com/atlarge-research/Performance-Characterization-Storage-Stacks.},
+booktitle = {Proceedings of the 3rd Workshop on Challenges and Opportunities of Efficient and Performant Storage Systems},
+pages = {35–45},
+numpages = {11},
+keywords = {SPDK, io_uring, linux storage stack, measurements, efficiency},
+location = {Rome, Italy},
+series = {CHEOPS '23}
+}
+
+@article{2023-vldb-flash-1M-dbms,
+author = {Haas, Gabriel and Leis, Viktor},
+title = {What Modern NVMe Storage Can Do, and How to Exploit It: High-Performance I/O for High-Performance Storage Engines},
+year = {2023},
+issue_date = {May 2023},
+publisher = {VLDB Endowment},
+volume = {16},
+number = {9},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3598581.3598584},
+doi = {10.14778/3598581.3598584},
+abstract = {NVMe SSDs based on flash are cheap and offer high throughput. Combining several of these devices into a single server enables 10 million I/O operations per second or more. Our experiments show that existing out-of-memory database systems and storage engines achieve only a fraction of this performance. In this work, we demonstrate that it is possible to close the performance gap between hardware and software through an I/O optimized storage engine design. In a heavy out-of-memory setting, where the dataset is 10 times larger than main memory, our system can achieve more than 1 million TPC-C transactions per second.},
+journal = {Proc. VLDB Endow.},
+month = {jul},
+pages = {2090–2102},
+numpages = {13}
+}
+
 @inproceedings{2022-cidr-append,
   author    = {Devashish R. Purandare and
                Peter Wilcox and
